@@ -35,7 +35,7 @@
         }
         .slide {
             padding-top: 40px;
-            background-color: #9a9485;
+            background-color: #ede4ce;
         }
         .slide .shout {
             font-size: 72px;
@@ -115,46 +115,46 @@
     <!-- SLIDE #3 -->
     <section class="slide prism">
         <h2 class="shout">
-            <div style="font-size: 100px;margin-bottom: 60px;">NEED FOR SPEED</div>
-            <div style="margin-top: -50px">
-                <img style="width: 250px; height: 250px" src="pictures/icons/speed.png">
-            </div>
-             <div style="font-size: 72px;">OPTIMIZING REACT</div>
+          <div style="font-size: 100px;margin-bottom: 60px;">NEED FOR SPEED</div>
+          <div style="margin-top: -50px;">
+            <img style="width: 250px; height: 250px;" src="pictures/icons/speed.png">
+          </div>
+          <div style="font-size: 72px;">OPTIMIZING REACT</div>
         </h2>
     </section>
 
     <!-- SLIDE #4 -->
     <section class="slide">
-        <h2>IS REACT FAST OUT OF THE BOX?</h2>
+        <h2 style="font-size: 48px; font-weight: 900">IS REACT FAST OUT OF THE BOX?</h2>
         <div class="wrap">
-            <div class="left_col" style="width: 70%">
-              <ul style="font-size: 35px;font-weight: bold; margin-top: 15px">
+            <div class="left_col" style="width: 70%;">
+              <ul style="font-size: 35px;font-weight: bold; margin-top: 15px;">
                 <li class="next">VIRTUAL DOM</li>
                 <li class="next">SLOWER THAN NATIVE JAVASCRIPT?</li>
                 <li class="next">SLOWER THAN JQUERY?</li>
                 <li class="next">MATTER OF UPDATES</li>
               </ul>
             </div>
-            <div class="right_col" style="width: 30%">
-              <img style="width: 300px; height: 300px" src="pictures/icons/box.png">
+            <div class="right_col" style="width: 30%; margin-top: 50px;">
+              <img style="width: 300px; height: 300px;" src="pictures/box.png">
             </div>
         </div>
     </section>
 
     <section class="slide">
         <h2 style="display: none;">UNOPTIMIZED APPLICATION</h2>
-        <div style="text-align: center; font-size: 100px"><a style="color:#000;" href="http://g3f4.xyz/optimizing-react/">UNOPTIMIZED APPLICATION</a></div>
+        <div style="text-align: center; font-size: 100px;"><a style="color:#000;" href="http://g3f4.xyz/optimizing-react/unoptimized/">UNOPTIMIZED APPLICATION</a></div>
     </section>
 
     <!-- SLIDE #5 -->
     <section class="slide">
         <h2>WHAT IS OUR GOAL OPTIMIZATION</h2>
         <div class="wrap">
-            <div class="left_col" style="width: 40%">
-                <img style="width: 300px; height: 300px" src="pictures/icons/goal.png">
+            <div class="left_col" style="width: 40%;">
+                <img style="width: 300px; height: 300px;" src="pictures/icons/goal.png">
             </div>
-            <div class="right_col" style="width: 60%">
-                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
+            <div class="right_col" style="width: 60%;">
+                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
                     <li class="next">FLUID ANIMATIONS</li>
                     <li class="next">FAST FORMS</li>
                     <li class="next">60 FPS</li>
@@ -167,15 +167,15 @@
     <section class="slide">
         <h2>WHEN START OPTIMIZATION</h2>
         <div class="wrap">
-          <div class="left_col" style="width: 70%">
-                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
+          <div class="left_col" style="width: 70%;">
+                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
                     <li class="next">NOT AT THE BEGINNING</li>
                     <li class="next">WHEN SLOWER DEVICES MATTER</li>
                     <li class="next">ENCOUNTERING BOTTLE NECKS</li>
                 </ul>
             </div>
-            <div class="right_col" style="width: 30%">
-                <img style="width: 300px; height: 300px" src="pictures/icons/start.png">
+            <div class="right_col" style="width: 30%;">
+                <img style="width: 300px; height: 300px;" src="pictures/icons/start.png">
             </div>
         </div>
     </section>
@@ -184,11 +184,11 @@
     <section class="slide">
         <h2 style="display: none;">DIAGNOSTICS</h2>
         <div class="wrap">
-            <div class="left_col" style="width: 45%">
-                <img style="width: 300px;height: 300px" src="pictures/icons/diagnostics.png">
+            <div class="left_col" style="width: 45%;margin-top: 50px;">
+                <img style="width: 300px;height: 300px;" src="pictures/icons/stethoscope.png">
             </div>
-            <div class="right_col" style="width: 55%">
-                <div style="font-size: 72px;font-weight: bold;margin-top: 50px;">DIAGNOSTICS</div>
+            <div class="right_col" style="width: 55%;">
+                <div style="font-size: 72px;font-weight: bold;margin-top: 150px;">DIAGNOSTICS</div>
             </div>
         </div>
     </section>
@@ -196,20 +196,24 @@
     <!-- SLIDE #8 -->
     <section class="slide">
         <h2>USING CONSOLE IN RENDER METHOD</h2>
-        <pre style="font-size: 24px;width: 100%;" class="language-javascript">
+        <pre style="font-size: 22px;width: 100%;" class="language-javascript">
             <code style="width: 100%;">
+              class MyComponent extends React.Component {
+                ...
                 render() {
-                  console.log(`Rendering instance of ${this.constructor.name}`);
+                  console.log(`Rendering ${this.constructor.name}`);
                   return (
                     < div>...< /div>
                   );
                 }
+                ...
+              }
             </code>
         </pre>
     </section>
 
-      <!-- SLIDE #9 -->
-    <section class="slide"">
+    <!-- SLIDE #9 -->
+    <section class="slide">
         <h2>WHY-DID-YOU-UPDATE</h2>
         <img style="" src="pictures/why-did-you-update.png">
         <h3>https://github.com/garbles/why-did-you-update</h3>
@@ -230,20 +234,20 @@
     <!-- SLIDE #11 -->
     <section class="slide">
       <h2>?REACT_PERF + DEV TOOLS TIMELINE</h2>
-      <ul style="font-size: 30px;font-weight: bold; margin-top: 0px">
+      <ul style="font-size: 30px;font-weight: bold; margin-top: 0px;">
         <li class="next">SINCE REACT v15.4.0. USE: http://localhost:3000/?react_perf</li>
       </ul>
-      <img class="next" style="" src="pictures/react_perf.png">
+      <img class="next" style="margin-left: 80px" src="pictures/react_perf.png">
     </section>
 `
     <!-- SLIDE #12 -->
-    <section class="slide" style="padding-top: 150px">
+    <section class="slide" style="padding-top: 150px;">
         <h2 style="display: none;">COMPOSITION</h2>
         <div class="wrap">
-            <div class="left_col" style="width: 45%">
-                <img style="width: 300px;height: 300px" src="pictures/composition.png">
+            <div class="left_col" style="width: 45%;">
+                <img style="width: 300px;height: 300px;" src="pictures/composition.png">
             </div>
-            <div class="right_col" style="width: 55%">
+            <div class="right_col" style="width: 55%;">
                 <div style="font-size: 72px;font-weight: bold;margin-top: 100px;">COMPOSITION</div>
             </div>
         </div>
@@ -253,24 +257,24 @@
     <section class="slide">
         <h2>JSX AND COMPONENTS</h2>
         <div class="wrap">
-          <div class="left_col" style="width: 70%">
-                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
+          <div class="left_col" style="width: 70%;">
+                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
                     <li class="next">CODE READABILITY</li>
                     <li class="next">LIFECYCLE</li>
                     <li class="next">CONTROLLING RENDER TREE</li>
                 </ul>
             </div>
-            <div class="right_col" style="width: 30%">
-                <img style="width: 300px; height: 300px" src="pictures/icons/component.png">
+            <div class="right_col" style="width: 30%;">
+                <img style="width: 300px; height: 300px;" src="pictures/icons/component.png">
             </div>
         </div>
     </section>
 
     <!-- SLIDE #14 -->
-    <section class="slide" style="padding-top: 30px">
+    <section class="slide" style="padding-top: 30px;">
       <h2>MAKING TEMPLATES WRONG WAY</h2>
-        <div class="wrap" style="margin-top: 30px">
-            <div class="left_col" style="width: 40%">
+        <div class="wrap" style="margin-top: 30px;">
+            <div class="left_col" style="width: 40%; margin-top: 50px;">
                 <img style="width: 300px;height: 300px;margin-top: 40px;" src="pictures/icons/bad.png">
             </div>
             <div class="right_col" style="width: 60%;">
@@ -291,12 +295,11 @@
         </div>
     </section>
 
-
     <!-- SLIDE #15 -->
-    <section class="slide" style="padding-top: 30px">
+    <section class="slide" style="padding-top: 30px;">
       <h2>MAKING TEMPLATES GOOD WAY</h2>
-        <div class="wrap" style="margin-top: 30px">
-            <div class="left_col" style="width: 60%">
+        <div class="wrap" style="margin-top: 30px;">
+            <div class="left_col" style="width: 65%;">
               <pre style="font-size: 22px;width: 100%;" class="language-javascript">
                 <code style="width: 100%;">
                   < div>
@@ -310,19 +313,18 @@
                 </code>
               </pre>
             </div>
-            <div class="right_col" style="width: 40%; padding-left: 30px">
+            <div class="right_col" style="width: 35%; padding-left: 30px;">
               <img style="width: 300px;height: 300px;margin-top: 40px;" src="pictures/icons/good.png">
             </div>
         </div>
     </section>
 
-
     <!-- SLIDE #16 -->
     <section class="slide">
         <h2>LIFECYCLE - UPDATING</h2>
         <div class="wrap">
-          <div class="left_col" style="width: 60%">
-                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
+          <div class="left_col" style="width: 60%;">
+                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
                     <li>componentWillReceiveProps</li>
                     <li>shouldComponentUpdate</li>
                     <li>componentWillUpdate</li>
@@ -330,59 +332,60 @@
                     <li>componentDidUpdate</li>
                 </ul>
             </div>
-            <div class="right_col" style="width: 40%">
-                <img style="width: 300px; height: 300px" src="pictures/icons/update.png">
+            <div class="right_col" style="width: 40%; margin-top: 60px;">
+                <img style="width: 300px; height: 300px;" src="pictures/icons/update.png">
             </div>
         </div>
     </section>
 
-
     <!-- SLIDE #17 -->
     <section class="slide">
         <h2>shouldComponentUpdate</h2>
-        <pre style="font-size: 24px;width: 100%;" class="language-javascript">
+        <pre style="font-size: 22px;width: 100%;" class="language-javascript">
             <code style="width: 100%;">
+              class MyComponent extends React.Component {
+                ...
                 shouldComponentUpdate(nextPros, nextState) {
                   const hasPropsChanged = shallowEqual(nextProps, this.props);
                   const hasStateChanged = shallowEqual(nextState, this.state);
                   return !hasPropsChanged && !hasStateChanged;
                 }
+                ...
+              }
             </code>
         </pre>
     </section>
 
-
     <section class="slide">
         <h2 style="display: none;">APPLICATION WITH SCU</h2>
-        <div style="text-align: center; font-size: 100px"><a style="color:#000;" href="http://g3f4.xyz/optimizing-react/">APPLICATION WITH SCU</a></div>
+        <div style="text-align: center; font-size: 100px;"><a style="color:#000;" href="http://g3f4.xyz/optimizing-react/scu/">APPLICATION WITH SCU</a></div>
     </section>
-
 
     <!-- SLIDE #18 -->
     <section class="slide">
         <h2>HOW NOT TO USE IT</h2>
         <div class="wrap">
-          <div class="left_col" style="width: 60%">
-                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
+          <div class="left_col" style="width: 60%;">
+                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
                     <li class="next">MUTATING STATE DIRECTLY</li>
                     <li class="next">PROPS BINGING FUNCTIONS</li>
                     <li class="next">DON'T USE EVERYWHERE</li>
                 </ul>
             </div>
-            <div class="right_col" style="width: 40%">
-                <img style="width: 300px; height: 300px" src="pictures/icons/no.png">
+            <div class="right_col" style="width: 40%;">
+                <img style="width: 300px; height: 300px;" src="pictures/icons/no.png">
             </div>
         </div>
     </section>
 
     <!-- SLIDE #19 -->
-    <section class="slide" style="padding-top: 100px">
+    <section class="slide" style="padding-top: 100px;">
         <h2 style="display: none;">IMMUTABILITY</h2>
         <div class="wrap">
-            <div class="left_col" style="width: 40%; margin-top: 50px">
-                <img style="width: 300px;height: 300px" src="pictures/question-mark.png">
+            <div class="left_col" style="width: 40%; margin-top: 50px;">
+                <img style="width: 300px;height: 300px;" src="pictures/question-mark.png">
             </div>
-            <div class="right_col" style="width: 60%">
+            <div class="right_col" style="width: 60%;">
                 <div style="font-size: 72px;font-weight: bold;">MUTABILITY</div>
                 <div style="font-size: 72px;font-weight: bold;">VS</div>
                 <div style="font-size: 72px;font-weight: bold;">IMMUTABILITY</div>
@@ -394,16 +397,16 @@
     <section class="slide">
         <h2>MUTABLE STRUCTURES AND REACT</h2>
         <div class="wrap">
-          <div class="left_col" style="width: 70%">
-                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
-                    <li class="next">IT'S HARD TO DETERMINE WHAT HAVE CHANGED</li>
-                    <li class="next">ASSERTING DEEP STRUCTURES IS EXPENSIVE</li>
-                    <li class="next">USING REFERENCES CAN LEAD TO ERRORS</li>
-                </ul>
-            </div>
-            <div class="right_col" style="width: 30%">
-                <img style="width: 300px; height: 300px" src="pictures/icons/wind.png">
-            </div>
+          <div class="left_col" style="width: 60%;">
+            <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
+              <li class="next">IT'S HARD TO DETERMINE WHAT HAVE CHANGED</li>
+              <li class="next">ASSERTING DEEP STRUCTURES IS EXPENSIVE</li>
+              <li class="next">USING REFERENCES CAN LEAD TO ERRORS</li>
+            </ul>
+          </div>
+          <div class="right_col" style="width: 40%; margin-top: 50px;">
+            <img style="width: 300px; height: 300px; margin-left: 40px;" src="pictures/icons/mutable.png">
+          </div>
         </div>
     </section>
 
@@ -411,11 +414,11 @@
     <section class="slide">
         <h2>WHY IMMUTABLE STRUCTURES</h2>
         <div class="wrap">
-          <div class="left_col" style="width: 45%">
-            <img style="width: 300px; height: 300px" src="pictures/icons/clone.png">
+          <div class="left_col" style="width: 45%;">
+            <img style="width: 300px; height: 300px;" src="pictures/icons/clone.png">
           </div>
-          <div class="right_col" style="width: 55%">
-            <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
+          <div class="right_col" style="width: 55%;">
+            <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
                 <li class="next">STATE IS READ-ONLY</li>
                 <li class="next">UPDATING STATE CREATE NEW STATE</li>
                 <li class="next">SIMPLER BUGS TRACING</li>
@@ -459,13 +462,13 @@
     </section>
 
     <!-- SLIDE #24 -->
-    <section class="slide" style="padding-top: 150px">
+    <section class="slide" style="padding-top: 150px;">
         <h2 style="display: none;">MEMOIZATION</h2>
         <div class="wrap">
-            <div class="left_col" style="width: 45%">
-                <img style="width: 300px;height: 300px" src="pictures/icons/memory.png">
+            <div class="left_col" style="width: 45%;">
+                <img style="width: 300px;height: 300px;" src="pictures/icons/memory.png">
             </div>
-            <div class="right_col" style="width: 55%">
+            <div class="right_col" style="width: 55%; margin-top: 80px;">
                 <div style="font-size: 72px;font-weight: bold;">MEMOIZATION</div>
             </div>
         </div>
@@ -475,15 +478,15 @@
     <section class="slide">
         <h2>WHAT IS MEMOIZATION?</h2>
         <div class="wrap">
-          <div class="left_col" style="width: 70%">
-            <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
+          <div class="left_col" style="width: 70%;">
+            <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
                 <li class="next">FUNCTION WITH MEMORY</li>
                 <li class="next">TIME-SPACE TRADE-OFF</li>
                 <li class="next">REFERENTIAL TRANSPARENCY(PURE)</li>
             </ul>
           </div>
-          <div class="right_col" style="width: 30%">
-            <img style="width: 300px; height: 300px" src="pictures/icons/memory.png">
+          <div class="right_col" style="width: 30%;">
+            <img style="width: 300px; height: 300px;" src="pictures/icons/memory.png">
           </div>
         </div>
     </section>
@@ -510,7 +513,7 @@
     <section class="slide">
       <h2>MOIZE AND REACT</h2>
       <div class="wrap">
-        <div class="left_col" style="width: 70%">
+        <div class="left_col" style="width: 70%;">
           <pre style="font-size: 24px;width: 100%;" class="next language-javascript">
             <code style="width: 100%;">
                 import moize from 'moize';
@@ -525,35 +528,50 @@
             </code>
           </pre>
         </div>
-        <div class="right_col" style="width: 30%">
-          <img style="width: 300px; height: 300px" src="pictures/logo/react.png">
+        <div class="right_col" style="width: 30%; margin-top: 80px;">
+          <img style="width: 300px; height: 300px;" src="pictures/logo/react.png">
         </div>
       </div>
     </section>
 
-
     <section class="slide">
         <h2 style="display: none;">APPLICATION WITH SCU AND MEMOIZATION</h2>
-        <div style="text-align: center; font-size: 100px"><a style="color:#000;" href="http://g3f4.xyz/optimizing-react/">APPLICATION WITH SCU AND MEMOIZATION</a></div>
+        <div style="text-align: center; font-size: 100px;"><a style="color:#000;" href="http://g3f4.xyz/optimizing-react/memoized/">APPLICATION WITH SCU AND MEMOIZATION</a></div>
     </section>
 
     <!-- SLIDE #28 -->
     <section class="slide">
+        <h2>WHAT MORE?</h2>
+        <div class="wrap">
+          <div class="left_col" style="width: 70%;">
+                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
+                  <li class="next">REMEMBER ABOUT PRODUCTION BUILD</li>
+                  <li class="next">WEBPACK PLUGINS</li>
+                  <li class="next">REACT ALTERNATIVES</li>
+                </ul>
+            </div>
+            <div class="right_col" style="width: 30%;">
+                <img style="width: 300px; height: 300px;" src="pictures/icons/brainbulb.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE #29 -->
+    <section class="slide">
         <h2>FINAL THOUGHTS</h2>
         <div class="wrap">
-          <div class="left_col" style="width: 70%">
-                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px">
+          <div class="left_col" style="width: 70%;">
+                <ul style="font-size: 35px;font-weight: bold; margin-top: 25px;">
                     <li class="next">DON'T OPTIMIZE PREMATURELY</li>
                     <li class="next">RENDER LOGIC COSTS TIME</li>
                     <li class="next">USE IMMUTABLE STRUCTURES AND PURE FUNCTIONS</li>
                 </ul>
             </div>
-            <div class="right_col" style="width: 30%">
-                <img style="width: 300px; height: 300px" src="pictures/icons/thought.png">
+            <div class="right_col" style="width: 30%;">
+                <img style="width: 300px; height: 300px;" src="pictures/icons/thought.png">
             </div>
         </div>
     </section>
-
 
     <!-- SLIDE #RESOURCES -->
     <section class="slide">
